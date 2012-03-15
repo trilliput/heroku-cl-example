@@ -2,7 +2,7 @@
 
 This project is an example of how to use the [Heroku Common Lisp Buildpack](https://github.com/mtravers/heroku-buildpack-cl).  See the buildpack repository for more information and credits.
 
-### This is the Hunchentoot branch.
+### This is the Portable AllegroServe branch.
 
 ## Instructions:
 First, get yourself set up with a [Heroku account and tools](http://devcenter.heroku.com/articles/quickstart).
