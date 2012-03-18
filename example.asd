@@ -1,14 +1,11 @@
-(in-package :asdf)
-
-(defsystem :example
-    :name "example"
-    :description "Example cl-heroku application"
-    :depends-on (:aserve)
-    :components
-    ((:static-file "example.asd")
-     (:module :src
-	      :serial t      
-	      :components
-	      ((:file "hello-world"))
-	      )))
+(asdf:defsystem #:example
+  :serial t
+  :description "Example cl-heroku application"
+  :depends-on (#:aserve
+	       #:cl-who
+	       #:postmodern)
+  :components ((:file "package")
+	       (:module :src
+			:serial t      
+			:components ((:file "hello-world")))))
 
