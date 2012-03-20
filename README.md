@@ -4,6 +4,8 @@ This project is an example of how to use the [Heroku Common Lisp Buildpack](http
 
 ### This is the Portable AllegroServe branch.
 
+### Example App: http://gentle-ice-6152.herokuapp.com/
+
 ## Instructions:
 First, get yourself set up with a [Heroku account and tools](http://devcenter.heroku.com/articles/quickstart).
 
