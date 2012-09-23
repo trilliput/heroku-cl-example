@@ -9,7 +9,16 @@
   :depends-on (#:hunchentoot
                #:cl-who
                #:postmodern)
-  :components ((:file "package") (:module :src
-                                  :serial t      
-                                  :components ((:file "hello-world")))))
+  :components ((:file "package") 
+               (:module :settings
+               :serial t
+               :components ((:file "common-settings")
+                            (:file "local-settings")))
+               (:module :src
+               :serial t      
+               :components ((:module :utils
+                             :serial t
+                             :components ((:file "heroku-utils")
+                                          (:file "db-utils")))
+                            (:file "hello-world")))))
 
