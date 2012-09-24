@@ -12,8 +12,7 @@
   :components ((:file "package") 
                (:module :settings
                :serial t
-               :components ((:file "common-settings")
-                            (:file "local-settings")))
+               :components ((:file "settings")))
                (:module :src
                :serial t      
                :components ((:module :utils
