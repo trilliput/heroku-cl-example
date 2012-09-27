@@ -1,0 +1,3 @@
+; (in-package :example)
+
+(setf *settings-db-params* (list "local-table" "local-user" "local-pass" "local-host"))
