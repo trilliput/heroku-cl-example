@@ -14,6 +14,8 @@
       (:link :rel "stylesheet" :type "text/css" :href "static/main.css")
       (:title "Heroku CL Example App"))
      (:body
+      (:a :href "https://github.com/Trilliput" 
+       (:img :class "forkme" :src "https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" :alt "Fork me on GitHub"))
       (:div :class "tweets")
       (:div :class "content"
       (:h1 "Heroku CL Example App")

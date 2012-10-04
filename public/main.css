@@ -2,6 +2,17 @@
  * Content {{{
  */
 
+body {
+  padding: 50px 100px;
+}
+
+.forkme {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  border: 0;
+}
+
 .content {
   margin-right: 350px;
 }
