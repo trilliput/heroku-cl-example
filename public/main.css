@@ -2,25 +2,25 @@
  * Content {{{
  */
 
-body {
-  padding: 50px 100px;
-  font: 14px Helvetica, arial, freesans, clean, sans-serif;
-}
-
-body a {
-  color: #555555;
-}
-
-.forkme {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  border: 0;
-}
-
-.content {
-  margin-right: 300px;
-}
+  body {
+    padding: 50px 100px;
+    font: 14px Helvetica, arial, freesans, clean, sans-serif;
+  }
+  
+  body a {
+    color: #555555;
+  }
+  
+  .forkme {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    border: 0;
+  }
+  
+  .content {
+    margin-right: 300px;
+  }
 
 /*
  * }}} Content
@@ -30,55 +30,55 @@ body a {
  * Tweet! {{{
  */
 
-.tweets {
-  float: right;
-  width: 250px;
-  font-size: 12px;
-}
-
-.tweets span.tweet_time {
-  display: none;
-}
-
-.tweet,
-.query {
-  font: 120% Georgia, serif;
-  color: #085258;
-}
-
-.tweet_list {
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden;
-  background-color: #8ADEE2;
-}
-
-.tweet_list li {
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 0.5em;
-  list-style-type: none;
-}
-
-.tweet_list li a {
-  color: #0C717A;
-}
-
-.tweet_list .tweet_even {
-  background-color: #91E5E7;
-}
-
-.tweet_list .tweet_avatar {
-  padding-right: .5em; float: left;
-}
-
-.tweet_list .tweet_avatar img {
-  vertical-align: middle;
-}
+  .tweets {
+    float: right;
+    width: 250px;
+    font-size: 12px;
+  }
+  
+  .tweets span.tweet_time {
+    display: none;
+  }
+  
+  .tweet,
+  .query {
+    font: 120% Georgia, serif;
+    color: #085258;
+  }
+  
+  .tweet_list {
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: #8ADEE2;
+  }
+  
+  .tweet_list li {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5em;
+    list-style-type: none;
+  }
+  
+  .tweet_list li a {
+    color: #0C717A;
+  }
+  
+  .tweet_list .tweet_even {
+    background-color: #91E5E7;
+  }
+  
+  .tweet_list .tweet_avatar {
+    padding-right: .5em; float: left;
+  }
+  
+  .tweet_list .tweet_avatar img {
+    vertical-align: middle;
+  }
 
 /*
  * }}} Tweet!
