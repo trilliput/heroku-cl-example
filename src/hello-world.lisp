@@ -8,8 +8,14 @@
   (cl-who:with-html-output-to-string (s)
     (:html
      (:head
+      (:script :language "javascript" :src "http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" :type "text/javascript")
+      (:script :language "javascript" :src "static/jquery.tweet.js" :type "text/javascript")
+      (:script :language "javascript" :src "static/main.js" :type "text/javascript")
+      (:link :rel "stylesheet" :type "text/css" :href "static/main.css")
       (:title "Heroku CL Example App"))
      (:body
+      (:div :class "tweets")
+      (:div :class "content"
       (:h1 "Heroku CL Example App")
       (:h3 "Using")
       (:ul
@@ -24,4 +30,4 @@
       (:div
        (:pre "SELECT version();"))
       (:div (format s "~A" (postmodern:with-connection (db-params)
-			     (postmodern:query "select version()"))))))))
+			     (postmodern:query "select version()")))))))))
