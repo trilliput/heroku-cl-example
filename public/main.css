@@ -2,9 +2,38 @@
  * Content {{{
  */
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {height: 100%;}
+  
   body {
     padding: 50px 100px;
     font: 14px Helvetica, arial, freesans, clean, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  * html .container {
+    height: 100%;
+  }
+
+  .container .container-float-cleaner {
+    clear: both;
+  }
+
+  h4 {
+    margin: 0 0 5px;
+  }
+
+  ul {
+    margin-top: 0;
+    padding-left: 20px;
   }
   
   body a {
@@ -24,6 +53,31 @@
 
 /*
  * }}} Content
+ */
+
+/*
+ * {{{ Footer
+ */
+  .footer {
+    position: relative;
+    height: 150px;
+    margin-top: -150px;
+    clear: both;
+  }
+  
+  .footer .powered-by {
+    float: left;
+  }
+  
+  .footer .powered-by img {
+    height: 150px;
+  }
+  
+  .footer .footer-content {
+    margin-left: 180px;
+  }
+/*
+ * }}} Footer
  */
 
 /*
