@@ -1,8 +1,8 @@
 (in-package :example)
 
 ;; Handlers
-(push (hunchentoot:create-folder-dispatcher-and-handler "/static/" "public/")
-	 hunchentoot:*dispatch-table*)
+(push (hunchentoot:create-folder-dispatcher-and-handler "/static/" "public/") 
+      hunchentoot:*dispatch-table*)
 
 (hunchentoot:define-easy-handler (hello-sbcl :uri "/") ()
   (cl-who:with-html-output-to-string (s)
