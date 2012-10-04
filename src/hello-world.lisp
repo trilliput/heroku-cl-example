@@ -24,7 +24,7 @@
 
          (:p "This is my sandbox project to play around with Common Lisp on the Heroku cloud using " (:a :href "https://github.com/jsmpereira/heroku-buildpack-cl" "a fork by José Santos Martins Pereira") "of the " (:a :href "https://github.com/mtravers/heroku-buildpack-cl" "Heroku Common Lisp Buildpack originally developed by Mike Travers") ". See the buildpack repository for more information and credits.")
 
-         (:p "This is the Hunchentoot branch. I'm focused only on Hunchentoot now, so other branch(es) was forked from the examle application originally made by José Santos Martins Pereira")
+         (:p "This is the Hunchentoot branch. I'm focused only on Hunchentoot now, so other branch(es) was forked from the example application originally made by José Santos Martins Pereira")
 
          (:p "Url to my sandbox app: " (:a :href "http://sleepy-peak-6043.herokuapp.com/" "http://sleepy-peak-6043.herokuapp.com/")))
          (:div :class "container-float-cleaner")))
