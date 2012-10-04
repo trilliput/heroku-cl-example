@@ -4,6 +4,11 @@
 
 body {
   padding: 50px 100px;
+  font: 14px Helvetica, arial, freesans, clean, sans-serif;
+}
+
+body a {
+  color: #555555;
 }
 
 .forkme {
@@ -14,7 +19,7 @@ body {
 }
 
 .content {
-  margin-right: 350px;
+  margin-right: 300px;
 }
 
 /*
@@ -27,7 +32,12 @@ body {
 
 .tweets {
   float: right;
-  width: 300px;
+  width: 250px;
+  font-size: 12px;
+}
+
+.tweets span.tweet_time {
+  display: none;
 }
 
 .tweet,
