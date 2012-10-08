@@ -1,1 +1,1 @@
-(defparameter *settings* (list :db (list "heroku-cl-example" "trilliput" "BDA3128" "localhost")))
+(defparameter *settings* (list :db (list "dbname" "user" "pass" "localhost")))
