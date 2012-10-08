@@ -1,5 +1,5 @@
 (in-package :core)
 
-(defun db-params ()
-  (OR (heroku-db-params) settings:settings-db-params)
+(defun utils-db-params ()
+  (OR (utils-heroku-db-params) settings:settings-db-params)
 )
