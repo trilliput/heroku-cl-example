@@ -19,8 +19,8 @@
                              (:file "init") 
                              (:module :utils
                               :serial t
-                              :components ((:file "heroku-utils")
-                                           (:file "db-utils")))))
+                              :components ((:file "heroku")
+                                           (:file "db")))))
                (:module :app
                 :serial t
                 :components ((:file "package")
