@@ -7,7 +7,7 @@
 (defun init-configs () 
   (and 
     (in-package :core)
-    (load "settings/settings.lisp" :verbose t)
+    (if (probe-file "settings/local-settings.lisp") (load "settings/settings.lisp" :verbose t)) ;added file existence check espcially to make Heroku work. TODO: Had to be solved later
     (if (probe-file "settings/local-settings.lisp") (load "settings/local-settings.lisp" :verbose t))))
 
 (defun get-db-params ()
