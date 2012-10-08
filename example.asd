@@ -9,18 +9,13 @@
   :depends-on (#:hunchentoot
                #:cl-who
                #:postmodern)
-  :components ((:module :settings
-                :serial t
-                :components ((:file "package")
-                             (:file "settings")))
-               (:module :core
+  :components ((:module :core
                 :serial t      
                 :components ((:file "package")
                              (:file "init") 
                              (:module :utils
                               :serial t
-                              :components ((:file "heroku")
-                                           (:file "db")))))
+                              :components ((:file "heroku")))))
                (:module :app
                 :serial t
                 :components ((:file "package")

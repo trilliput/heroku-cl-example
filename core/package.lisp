@@ -3,5 +3,5 @@
 (defpackage #:core
   (:use #:cl)
   (:export :init
-           :utils-db-params
+           :get-db-params
            :utils-heroku-db-params))

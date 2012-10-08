@@ -13,3 +13,6 @@
          (host (first (cl-ppcre:split ":" (first (cl-ppcre:split "/" (second (cl-ppcre:split "@" url)))))))
          (database (second (cl-ppcre:split "/" (second (cl-ppcre:split "@" url))))))
         (list database user password host))))
+
+(defun utils-heroku-or-local-db-params ()
+  (OR (utils-heroku-db-params) (getf *settings* :db)))

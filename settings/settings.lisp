@@ -1,6 +1,1 @@
-(in-package :settings)
-
-(defvar settings-db-params (list "db-name" "user" "pass" "host"))
-
-
-(if (probe-file "settings/local-settings.lisp") (load "settings/local-settings.lisp"))
+(defparameter *settings* (list :db (list "heroku-cl-example" "trilliput" "BDA3128" "localhost")))

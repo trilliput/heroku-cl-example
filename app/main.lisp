@@ -40,5 +40,5 @@
          (:li (format s "~A ~A" (lisp-implementation-type) (lisp-implementation-version)))
          (:li (format s "Hunchentoot ~A" hunchentoot::*hunchentoot-version*))
          (:li (format s "CL-WHO"))
-         (:li (format s "~A" (caar (postmodern:with-connection (core:utils-db-params) (postmodern:query "select version()"))))))
+         (:li (format s "~A" (caar (postmodern:with-connection (core:get-db-params) (postmodern:query "select version()"))))))
        (:div :class "footer-float-cleaner")))))))
