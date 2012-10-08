@@ -1,4 +1,4 @@
-(in-package :example)
+(in-package :core)
 
 (defun heroku-getenv (target)
   #+ccl (ccl:getenv target)

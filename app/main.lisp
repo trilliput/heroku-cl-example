@@ -1,7 +1,9 @@
-(in-package :example)
+(in-package :app)
+
+(core:init)
 
 ;; Handlers
-(push (hunchentoot:create-folder-dispatcher-and-handler "/static/" "public/") 
+(push (hunchentoot:create-folder-dispatcher-and-handler "/static/" "static/") 
       hunchentoot:*dispatch-table*)
 
 (hunchentoot:define-easy-handler (hello-sbcl :uri "/") ()
@@ -38,5 +40,5 @@
          (:li (format s "~A ~A" (lisp-implementation-type) (lisp-implementation-version)))
          (:li (format s "Hunchentoot ~A" hunchentoot::*hunchentoot-version*))
          (:li (format s "CL-WHO"))
-         (:li (format s "~A" (caar (postmodern:with-connection (db-params) (postmodern:query "select version()"))))))
+         (:li (format s "~A" (caar (postmodern:with-connection (core:db-params) (postmodern:query "select version()"))))))
        (:div :class "footer-float-cleaner")))))))

@@ -1,4 +1,4 @@
 ;;;; package.lisp
 
-(defpackage #:example
+(defpackage #:app
   (:use #:cl))
