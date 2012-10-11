@@ -13,11 +13,15 @@
                 :serial t      
                 :components ((:file "package")
                              (:file "init") 
+                             (:file "model") 
                              (:module :utils
                               :serial t
                               :components ((:file "heroku")))))
                (:module :app
                 :serial t
-                :components ((:file "package")
-                             (:file "main")))))
+                :components ((:module :models
+                              :serial t
+                              :components ((:file "users")))
+                              (:file "package")
+                              (:file "main")))))
 
